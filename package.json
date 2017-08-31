@@ -1,0 +1,33 @@
+{
+  "name": "sass-theme-defaults",
+  "version": "1.0.0",
+  "description": "Personal default classes and variables I use in my projects",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0",
+    "build": "npm run gh-pages",
+    "gh-pages": "cat docs/gh-pages.scss | ./node_modules/node-sass/bin/node-sass --output-style expanded > docs/gh-pages.css && node docs/gh-pages.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/torch2424/sass-theme-defaults.git"
+  },
+  "keywords": [
+    "sass",
+    "styles",
+    "variables",
+    "center"
+  ],
+  "author": "Aaron Turner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/torch2424/sass-theme-defaults/issues"
+  },
+  "homepage": "https://github.com/torch2424/sass-theme-defaults#readme",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "install": "^0.10.1",
+    "node-sass": "^4.5.3",
+    "npm": "^5.3.0"
+  }
+}
