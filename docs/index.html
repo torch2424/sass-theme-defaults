@@ -5,49 +5,121 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
   <style amp-boilerplate="">body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <style amp-custom="">
-body {
-  max-width: 700px;
+.center, .center-text {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.exampleBlock {
-  background-color: blue;
-  color: white;
+.center-text {
+  text-align: center;
 }
 
-.exampleBlock__exampleElement, .exampleBlock__exampleElement--modified {
-  background-color: red;
+html, body {
+  background-color: #F9F9F9;
 }
 
-.exampleBlock__exampleElement--modified {
-  background-color: green;
+.container {
+  color: #050505;
+}
+
+.standard {
+  color: #050505;
+}
+
+.standard-bg {
+  background-color: #050505;
+}
+
+.inverse {
+  color: #F9F9F9;
+}
+
+.sub-standard {
+  color: #88888C;
+}
+
+.links {
+  color: #4A9CEE;
+}
+
+.links:visited {
+  color: 61.17647%;
+}
+
+.transparent-25 {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.transparent-50 {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.transparent-75 {
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.transparent-light-25 {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.transparent-light-50 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.transparent-light-75 {
+  color: rgba(255, 255, 255, 0.75);
 }
 </style>
 </head>
 <body>
 
-  <h1>Sass BEM Mixins Example</h1>
-  <aside><i>An Ironically unstyled gh-pages</i></aside>
-  <h3><a href="https://github.com/torch2424/sass-bem-mixins" target="_blank">Github Repo Link</a></h3>
-  <main class="exampleBlock">
-    START: class=&quot;exampleBlock&quot; =&gt; @include block(&apos;exampleBlock&apos;) { background-color: blue; color: white }
-    <article class="exampleBlock__exampleElement">
-      START: class=&quot;exampleBlock__exampleElement&quot; =&gt; @include element(&apos;exampleElement&apos;) { background-color: red; }
+  <h1>Sass Theme Defaults Example</h1>
+  <main class="container">
+    The background color of this webpage is $inverse.
 
-      <br>
-      <br>
+    <h3 class="standard">
+      This text color is $standard.
+    </h3>
+    <div class="sub-standard">
+      This text color is $sub-standard
+    </div>
 
-      END: class=&quot;exampleBlock__exampleElement&quot;
-    </article>
-    <article class="exampleBlock__exampleElement--modified">
-      START: class=&quot;exampleBlock__exampleElement--modified&quot; =&gt; @include modifier(&apos;modified&apos;) { background-color: green; }
+    <div>
+      This link to the sass-theme-defaults Github repository has a text color of $links : <a href="https://github.com/torch2424/sass-theme-defaults" target="_blank" class="links">Github Repo Link</a>
+    </div>
 
-      <br>
-      <br>
+    <h3>
+      Here are the available $transparent-x values:
+    </h3>
 
-      END: class=&quot;exampleBlock__exampleElement--modified&quot;
-    </article>
-    END: class=&quot;exampleBlock&quot;
+    <div class="transparent-25">
+      This text color is $transparent-25
+    </div>
+    <div class="transparent-50">
+      This text color is $transparent-50
+    </div>
+    <div class="transparent-75">
+      This text color is $transparent-75
+    </div>
+
+    <h3>
+      Here are the available $transparent-light-x values. They are above a dark background to see the values:
+    </h3>
+
+    <div class="standard-bg transparent-light-25">
+      This text color is $transparent-light-25
+    </div>
+    <div class="standard-bg transparent-light-50">
+      This text color is $transparent-light-50
+    </div>
+    <div class="standard-bg transparent-light-75">
+      This text color is $transparent-light-75
+    </div>
+
   </main>
+
+
+
 
 
 

@@ -1,18 +1,55 @@
 @import './index';
 
-body {
-  max-width: 700px;
+html, body {
+  background-color: $inverse;
 }
 
-@include block('exampleBlock') {
-  background-color: blue;
-  color: white;
+.container {
+  color: $standard;
+}
 
-  @include element('exampleElement') {
-    background-color: red;
+.standard {
+  color: $standard;
+}
 
-    @include modifier('modified') {
-      background-color: green;
-    }
-  }
+.standard-bg {
+  background-color: $standard;
+}
+
+.inverse {
+  color: $inverse;
+}
+
+.sub-standard {
+  color: $sub-standard;
+}
+
+.links {
+  color: $links;
+}
+
+.links:visited {
+  color: lightness($links);
+}
+
+.transparent-25 {
+  color: $transparent-25;
+}
+
+.transparent-50 {
+  color: $transparent-50;
+}
+.transparent-75 {
+  color: $transparent-75;
+}
+
+.transparent-light-25 {
+  color: $transparent-light-25;
+}
+
+.transparent-light-50 {
+  color: $transparent-light-50;
+}
+.transparent-light-75 {
+  color: $transparent-light-75;
 }
