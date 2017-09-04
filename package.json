@@ -1,6 +1,6 @@
 {
   "name": "sass-theme-defaults",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal default classes and variables I use in my projects",
   "main": "index.scss",
   "scripts": {
