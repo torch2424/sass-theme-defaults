@@ -1,6 +1,6 @@
 # sass-theme-defaults
 
-![npm version](https://badge.fury.io/js/sass-theme-defaults.svg)](https://badge.fury.io/js/sass-theme-defaults)
+[![npm version](https://badge.fury.io/js/sass-theme-defaults.svg)](https://badge.fury.io/js/sass-theme-defaults)
 
 Importable personal default classes and variables I use in my projects
 
