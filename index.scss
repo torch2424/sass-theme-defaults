@@ -23,3 +23,19 @@ $transparent-light-75: rgba(255, 255, 255, 0.75);
     @extend .center;
     text-align: center;
 }
+
+.center-children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-children-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.center-children-vertical {
+  display: flex;
+  align-items: center;
+}

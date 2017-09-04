@@ -7,6 +7,22 @@
   text-align: center;
 }
 
+.center-children {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-children-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+.center-children-vertical {
+  display: flex;
+  align-items: center;
+}
+
 html, body {
   background-color: #F9F9F9;
 }
@@ -61,4 +77,20 @@ html, body {
 
 .transparent-light-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.example-block {
+  width: 200px;
+  height: 50px;
+  background-color: #050505;
+  color: #F9F9F9;
+}
+
+.center-children-container {
+  height: 200px;
+  border: 2px solid #050505;
 }

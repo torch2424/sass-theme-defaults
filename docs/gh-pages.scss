@@ -53,3 +53,19 @@ html, body {
 .transparent-light-75 {
   color: $transparent-light-75;
 }
+
+.full-width {
+  width: 100%;
+}
+
+.example-block {
+  width: 200px;
+  height: 50px;
+  background-color: $standard;
+  color: $inverse;
+}
+
+.center-children-container {
+  height: 200px;
+  border: 2px solid $standard;
+}
